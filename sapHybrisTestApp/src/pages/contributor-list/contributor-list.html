@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Contributor List</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-card>
+        <ion-item text-wrap>
+            <ion-label>Username</ion-label>
+            <ion-input type="text" name="username" placeholder="Enter username" text-wrap [(ngModel)]="username"></ion-input>
+        </ion-item>
+        <ion-item text-wrap>
+            <ion-label>Repo</ion-label>
+            <ion-input type="text" name="sortBy" placeholder="Enter value for repository" text-wrap [(ngModel)]="repo"></ion-input>
+        </ion-item>
+
+        <button ion-button round (click)="searchContributors()" small>
+            <ion-icon name="upload">   Submit</ion-icon>
+          </button>
+    </ion-card>
+
+
+</ion-content>

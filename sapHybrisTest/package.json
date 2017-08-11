@@ -1,0 +1,20 @@
+{
+    "name": "gitserviceapi",
+    "version": "1.0.0",
+    "description": "RESTful Service for Git",
+    "main": "gitService.js",
+    "scripts": {
+        "test": "test",
+        "start": "nodemon gitService.js"
+    },
+    "author": "Vinay Sheshadri",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "express": "^4.15.4",
+        "request": "^2.81.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.11.0"
+    }
+}
